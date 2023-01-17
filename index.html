@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>⬛ QR Code Generator ⬜</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Style/style.css">
+    </head>
+    <body>
+        <div class="headings">
+            <ul>
+                <li><a class="active" href="index.html">QR Code Generator</a></li>
+                <li><a class="reader" href="reader.html">QR Code Reader</a></li>
+              </ul>
+            <h1>⬛ QR Code Generator ⬜</h1>
+        </div>
+
+       <section>
+            <div class="row">
+                <input type="color" class="light" value="#ffffff" autocomplete='off'>
+                <div class="scaling">
+                    <p class="outSize">450x450</p>
+                    <input type="range" class="sizes" min="100" max="490" value="450" class="slider" autocomplete="off">
+                </div>
+                <input type="color" class="dark" value="#000000" autocomplete='off'>
+            </div>
+            <input type="text" class="txtin" placeholder="Enter text/link here!" autocomplete='off'>
+            <div id="options"></div>
+            <div class="actions">
+                <a href="#" class="btn download" download="QRCode">
+                    <img src="/Img/download.svg" alt="">
+                    <span>Download</span>
+                </a>
+
+                <button class="btn share">
+                    <img src="/Img/share.svg" alt="">
+                    <span>Share</span>
+                </button>
+            </div>
+       </section>
+        
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="Scripts/script.js" ></script>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+  padding-top: 2px;
+  padding-bottom: 4px;
+  font-family: sans-serif;
+  background: #3474FF;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  align-content: flex;
+  border-radius: 8px;
+  background-color: #3474FF;
+  border:2px solid #fff;
+  padding-left: 0;
+}
+
+li{
+  font-weight: 800;
+  padding-left: 0;
+}
+
+.active{
+  float: left;
+}
+
+.reader{
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #2b5bc3;
+}
+  
+body{
+  background: #FFBF34;
+  font-family: sans-serif;
+  display: grid;
+  justify-content: center;
+  color: #fff;
+}
+.outputBox{
+    color: #fff;
+    font-weight: 1000;
+    background: #3474FF;
+    border-radius: 8px;
+    border: 2px solid #fff;
+    height: 200px;
+    width: 500px;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    resize: none;
+    margin-top: 4%;
+}
+.outputBox::placeholder{
+    color: #fff;
+    font-weight: 1000;
+    text-align: center;
+}
+#read{
+    position: absolute;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background: #3474FF;
+}
+.inRead{
+  border: 2px solid #fff;
+  border-radius: 9px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style2.css">
+    <title>⬛ QR Code Reader ⬜</title>
+</head>
+<body>
+    <div class="headings">
+        <ul>
+            <li><a class="active" href="index.html">QR Code Generator</a></li>
+            <li><a class="reader" href="reader.html">QR Code Reader</a></li>
+        </ul>
+        <h1>⬛ QR Code Reader ⬜</h1>
+    </div>
+
+    <section>
+        <div class="inRead">
+            <div id="read"></div>
+        </div>
+        <div id="outArea">
+            <textarea class="outputBox" cols="50" rows="50" spellcheck="false" readonly autocomplete="off" placeholder="QR Code text here!"></textarea>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.4/html5-qrcode.min.js" integrity="sha512-k/KAe4Yff9EUdYI5/IAHlwUswqeipP+Cp5qnrsUjTPCgl51La2/JhyyjNciztD7mWNKLSXci48m7cctATKfLlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Scripts/script2.js"></script>
+</body>
+</html>
