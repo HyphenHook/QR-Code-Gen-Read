@@ -29,7 +29,7 @@ function changeTxt(e){
 }
 
 function changeSize(e){
-    document.querySelector(".outSize").innerText = e.target.value + "x" + e.target.value;
+    document.querySelector(".outSize").innerText = `${e.target.value}x${e.target.value}`;
     size = e.target.value;
     changeQR();
 }
@@ -47,7 +47,7 @@ async function changeQR(){
 }
 
 async function getShare(){
-    setTimeout(async function() {
+    setTimeout(async () => {
         try{
             const base64url = await resolveDataUrl();
             const blob = await (await fetch(base64url)).blob();
@@ -64,8 +64,8 @@ async function getShare(){
     }, 100);
 }
 function resolveDataUrl(){
-    return new Promise((resolve) =>{
-        setTimeout(function() {
+    return new Promise(resolve =>{
+        setTimeout(() => {
             const img = document.querySelector("#options img");
             if(img.currentSrc){
                 resolve(img.currentSrc);
