@@ -93,6 +93,10 @@ a{
     text-align: center;
 }
 
+.txtin::selection{
+    background: #FFBF34;
+}
+
 #options{
     height: 500px;
     width: 500px;
